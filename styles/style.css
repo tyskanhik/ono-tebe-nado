@@ -50,7 +50,7 @@
     position: absolute;
     inset: 0;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.5;
     min-width: 100%;
     z-index: -1;
     
@@ -64,6 +64,7 @@
     min-width: 100%;
     background-image: url(../images/cover.jpg);
     z-index: -1;
+    color: white;
 }
 
 .cover__title {
@@ -72,12 +73,12 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 30px;
-    color: white;
+
 }
 
 .cover__title .aligned-text {
     display: block;
-    padding: 20px 0 0;
+    padding: 0 0 10px;
 }
 
 .aligned-text_center {
@@ -86,4 +87,31 @@
 
 .aligned-text_right {
     text-align: right;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 90px 50px 50px;
+    font-size: 22px;
+    text-transform: uppercase;
+    gap: 78px;
+}
+
+.cover__description-text {
+    word-spacing: 30px;
+    font-style: normal;
+}
+
+.bet-button {
+    padding: 12px 32px;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    font-family: 'Raleway';
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    
 }
