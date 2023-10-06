@@ -1,5 +1,8 @@
 /* место для вашего кода */
 
+
+/* стили header */
+
 .header {
     display: flex;
     align-items: center;
@@ -38,4 +41,49 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
+}
+
+
+/* оверлей */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0.6;
+    min-width: 100%;
+    z-index: -1;
+    
+}
+
+
+/* стили секции cover */
+
+.cover {
+    position: relative;
+    min-width: 100%;
+    background-image: url(../images/cover.jpg);
+    z-index: -1;
+}
+
+.cover__title {
+    padding: 165px 50px 20px;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    color: white;
+}
+
+.cover__title .aligned-text {
+    display: block;
+    padding: 20px 0 0;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
 }
