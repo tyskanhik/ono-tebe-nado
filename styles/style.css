@@ -4,10 +4,15 @@
 /* стили header */
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: space-between;
-    padding: 92px 51px 92px 49px;
+    padding: 92px 49px 92px 51px;
+}
+
+.header__menu {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .header__links-list {
@@ -31,18 +36,33 @@
     border: none;
 }
 
+.header__logo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+}
 
 .header__logo .header__logo-image {
     width: 148px;
-    height: 105px;  
+    height: 105px;
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
+    grid-column-start: 6;
+    grid-column-end: 7;
     font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+    white-space: nowrap;
+    width: 240px;
+    padding: 5px 0 7px;
 }
 
+.address a {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
 
 /* оверлей */
 
@@ -73,20 +93,26 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 30px;
-
+    word-spacing: -22px;
 }
 
 .cover__title .aligned-text {
     display: block;
-    padding: 0 0 10px;
+    margin: 0 0 10px;
 }
 
 .aligned-text_center {
     text-align: center;
+    width: 1280px;
+    padding-left: 30px;
 }
 
 .aligned-text_right {
     text-align: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
 }
 
 .cover__description {
@@ -100,7 +126,7 @@
 }
 
 .cover__description-text {
-    word-spacing: 30px;
+    word-spacing: 18px;
     font-style: normal;
 }
 
@@ -112,6 +138,5 @@
     font-family: 'Raleway';
     font-size: 22px;
     text-transform: uppercase;
-    color: white;
-    
+    color: white;  
 }
