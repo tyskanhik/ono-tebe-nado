@@ -94,23 +94,33 @@
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 30px;
+    letter-spacing: 60px;
     word-spacing: -22px;
 }
 
-.cover__title .aligned-text {
+.aligned-text {
+    letter-spacing: 60px;
+}
+
+.aligned-text span {
+    letter-spacing: 30px;
+}
+
+.aligned-text {
     display: block;
-    margin: 0 0 10px;
+    padding-bottom: 10px;
 }
 
 .aligned-text_center {
     text-align: center;
     width: 1280px;
     padding-left: 30px;
+    padding-bottom: 2px;
 }
 
 .aligned-text_right {
     text-align: right;
+    padding-bottom: 23px;
 }
 
 .no-letter-spacing {
@@ -121,8 +131,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 90px 50px 50px;
+    padding: 85px 50px 50px;
     font-size: 22px;
+    line-height: 28px;
     text-transform: uppercase;
     gap: 78px;
 }
@@ -140,7 +151,7 @@
     font-family: 'Raleway';
     font-size: 22px;
     text-transform: uppercase;
-    color: white;  
+    color: white;
 }
 
 /* стили секции lots */
