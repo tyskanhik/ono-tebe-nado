@@ -5,9 +5,9 @@
 
 .header {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 49px 92px 51px;
+    padding: 92px 50px;
 }
 
 .header__menu {
@@ -40,6 +40,7 @@
     grid-column-start: 3;
     grid-column-end: 5;
     text-align: center;
+    padding-left: 20px;
 }
 
 .header__logo .header__logo-image {
@@ -113,9 +114,6 @@
 
 .aligned-text_center {
     text-align: center;
-    width: 1280px;
-    padding-left: 30px;
-    padding-bottom: 2px;
 }
 
 .aligned-text_right {
@@ -131,7 +129,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 85px 50px 50px;
+    padding: 84px 50px 50px;
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
