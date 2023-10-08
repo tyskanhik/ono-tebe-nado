@@ -100,6 +100,8 @@
 }
 
 .aligned-text {
+    display: block;
+    padding-bottom: 10px;
     letter-spacing: 60px;
 }
 
@@ -107,22 +109,18 @@
     letter-spacing: 30px;
 }
 
-.aligned-text {
-    display: block;
-    padding-bottom: 10px;
+.aligned-text span .no-letter-spacing {
+    letter-spacing: 0;
 }
 
 .aligned-text_center {
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .aligned-text_right {
     text-align: right;
-    padding-bottom: 23px;
-}
-
-.no-letter-spacing {
-    letter-spacing: 0;
+    padding-bottom: 20px;
 }
 
 .cover__description {
