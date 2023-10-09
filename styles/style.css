@@ -15,7 +15,6 @@
     gap: 32px;
     list-style-type: circle;
     font-size: 18px;
-    font-style: normal;
 }
 
 .header__links-list-item_no-bullit {
@@ -23,16 +22,12 @@
 }
 
 .header__link {
-    text-decoration: none;
-    border-bottom: 1px solid black;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 .header__link_active {
     border: none;
-}
-
-.header__logo {
-    text-align: center;
 }
 
 .header__logo .header__logo-image {
@@ -41,14 +36,13 @@
 }
 
 .address {
+    padding: 5px 0 5px;
+    width: 240px;
     justify-self: end;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 24.3px;
+    line-height: 24px;
     white-space: nowrap;
-    width: 240px;
-    padding: 3px 0 7px;
 }
 
 .address a {
@@ -60,12 +54,11 @@
 
 .overlay {
     position: absolute;
+    min-width: 100%;
     inset: 0;
     background: #000;
     opacity: 0.5;
-    min-width: 100%;
     z-index: -1;
-    
 }
 
 
@@ -86,8 +79,6 @@
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 60px;
-    word-spacing: -22px;
 }
 
 .aligned-text {
@@ -117,17 +108,15 @@
 .cover__description {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 84px 50px 50px;
-    font-size: 22px;
-    line-height: 28px;
-    text-transform: uppercase;
     gap: 78px;
+    padding: 84px 50px 50px;
+    align-items: center;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
 .cover__description-text {
     word-spacing: 18px;
-    font-style: normal;
 }
 
 .bet-button {
@@ -168,9 +157,9 @@
     position: relative;
     display: block;
     height: 100%;
-    z-index: 0;
-    width: 430px;
     min-height: 450px;
+    width: 430px;
+    z-index: 0;
     text-decoration: none;
 }
 
@@ -193,11 +182,11 @@
 }
 
 .card {
-    height: 100%;
+    padding: 50px 40px;
     display: grid;
     align-content: space-between;
+    height: 100%;
     text-align: start;
-    padding: 50px 40px;
     color: white;
 }
 
@@ -250,12 +239,12 @@
 
 .about__logo div {
     display: flex;
-    border-radius: 50%;
-    width: 240px;
-    height: 240px;
-    background-color: black;
     justify-content: center;
     align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .about__logo-image {
@@ -281,7 +270,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 30px 50px 0;
 }
 
 .footer__menu {
