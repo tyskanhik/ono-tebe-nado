@@ -238,6 +238,11 @@
     flex-basis: 430px;
 }
 
+.about__column:last-child {
+    flex-grow: 1;
+    padding-left: 25px;
+}
+
 .about__logo {
     display: flex;
     justify-content: center;
@@ -256,4 +261,17 @@
 .about__logo-image {
     width: 148px;
     height: 114px;
+}
+
+.about__title {
+    padding: 100px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
 }
