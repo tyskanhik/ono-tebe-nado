@@ -38,7 +38,6 @@
 .address {
     display: grid;
     justify-items: start;
-    padding: 5px 0 5px;
     max-width: 240px;
     justify-self: end;
     font-size: 18px;
@@ -276,7 +275,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 30px 50px 90px;
 }
 
 .footer__menu {
